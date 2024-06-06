@@ -15,7 +15,9 @@
  */
 class Solution{
     public boolean isSymmetric(TreeNode root) {
-        if(root.left==null && root.right==null) return true;
+        if(root.left==null && root.right==null) {
+            return true;
+        }    
         return symmtry(root.left,root.right);
     }
     public Boolean symmtry(TreeNode node1 , TreeNode node2){
