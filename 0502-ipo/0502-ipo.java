@@ -19,7 +19,7 @@ public static int findMaximizedCapital(int k, int w, int[] profits, int[] capita
             i++;
         }
 
-    ;
+    
         if (pq.isEmpty()) {
             break;
         }
