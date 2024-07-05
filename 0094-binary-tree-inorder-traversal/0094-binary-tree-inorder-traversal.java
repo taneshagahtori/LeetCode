@@ -16,6 +16,9 @@
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list= new LinkedList<Integer>();
+        
+        //using stack
+        
         // Stack<TreeNode> stack=new Stack<TreeNode>();
         // TreeNode node=root;
         // while(!stack.isEmpty() || node!=null){
@@ -33,6 +36,8 @@ class Solution {
         //     }
         // }
         // return list;
+        
+        //using recursive method
         if(root!=null){
             list.addAll(inorderTraversal(root.left));
             list.add(root.val);
