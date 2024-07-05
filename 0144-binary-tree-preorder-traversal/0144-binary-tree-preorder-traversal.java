@@ -16,6 +16,9 @@
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List <Integer> list= new LinkedList<Integer>();
+        
+        //using stack 
+        
         // if(root==null){
         //     return list;
         // }
@@ -32,6 +35,8 @@ class Solution {
         //     }
         // }
         // return list;
+        
+        //recursive method
         if(root!=null){
             list.add(root.val);
             list.addAll(preorderTraversal(root.left));
