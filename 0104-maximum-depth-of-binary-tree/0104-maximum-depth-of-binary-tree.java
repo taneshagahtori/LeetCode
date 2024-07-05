@@ -20,11 +20,6 @@ class Solution {
         }
         int left=maxDepth(root.left);
         int right=maxDepth(root.right);
-        if (left==0 || right==0){
-            return left+right+1;
-        }
-        else{
-            return Math.max(left,right)+1;
-        }    
+        return Math.max(left,right)+1;   
     }
 }
