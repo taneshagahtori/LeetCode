@@ -20,9 +20,6 @@
 
 class Solution {
     private void backtrack(List<List<Integer>> FinalList, List <Integer> list, int[] nums, int idx){
-        // if (FinalList.contains(list)){
-        //     return;
-        // }
         FinalList.add(new ArrayList<>(list));
         
         for(int i=idx; i<nums.length; i++){
